@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "308942571053",
+    "project_id": "purge-mmo-mobile-app",
+    "storage_bucket": "purge-mmo-mobile-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308942571053:android:93df203c9e9fdf9277daa4",
+        "android_client_info": {
+          "package_name": "com.example.purge_mmo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuOr3ZFp4rs50RMD7OROYTPPYyiQXlI2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
