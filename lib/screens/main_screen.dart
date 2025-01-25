@@ -13,17 +13,20 @@ class MainScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('MMO Hra'),
       ),
-      body: BlocBuilder<GameBloc, GameState>(
-        builder: (context, state) {
-          return Column(
-            children: [
-              Text('Hráč: ${state.playerName}'),
-              Text('Zdraví: ${state.health}'),
-              Text('Mana: ${state.mana}'),
-              Expanded(child: GameWidget(game: MyGame())),
-            ],
-          );
-        },
+      body: BlocProvider(
+        create: (context) => GameBloc(),
+        child: BlocBuilder<GameBloc, GameState>(
+          builder: (context, state) {
+            return Column(
+              children: [
+                Text('Hráč: ${state.playerName}'),
+                Text('Zdraví: ${state.health}'),
+                Text('Mana: ${state.mana}'),
+                Expanded(child: GameWidget(game: MyGame())),
+              ],
+            );
+          },
+        ),
       ),
     );
   }
